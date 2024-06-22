@@ -3,6 +3,8 @@ import { FaRegUserCircle } from "react-icons/fa";
 import { CiSaveDown2 } from "react-icons/ci";
 import { FaRegComment } from "react-icons/fa";
 import { useState } from "react";
+import { CiLocationArrow1 } from "react-icons/ci";
+
 
 const Card = ({ like, share, save, setLike, setShare, setSave }) => {
   const [open, setOpen] = useState(false);
@@ -43,7 +45,8 @@ const Card = ({ like, share, save, setLike, setShare, setSave }) => {
           onClick={() => setShare(share + 1)}
           className="text-2xl"
         />
-        <CiSaveDown2
+        <CiLocationArrow1 
+
           onClick={() => setSave(save + 1)}
           className="text-2xl"
         />
